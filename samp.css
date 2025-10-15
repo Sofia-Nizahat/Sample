@@ -1,0 +1,26 @@
+.header {
+  backgrond-color: #f0f0f0; /* Should be 'background-color' */
+  padding: 10px;
+}
+
+/* Bug 2: Missing semicolon */
+.button {
+  color: white
+  background-color: blue; /* Missing semicolon after 'white' */
+  border-radius: 5px; a
+}
+
+/* Bug 3: Incorrect selector specificity */
+#main-content p {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px; /* This rule might override the more specific one due to order or other factors */
+}
+
+/* Bug 4: Unclosed comment */
+/* This is an unclosed comment that will cause errors
+.footer {
+  text-align: center;
+}
